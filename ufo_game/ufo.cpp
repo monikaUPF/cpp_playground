@@ -15,7 +15,7 @@ int main() {
 
   while (answer != codeword && misses < 7) {
     display_status(incorrect, answer);
-    cout << "Please, enter your guess: ";
+    cout << "Please, enter your guess: \n";
     cin >> letter;
 
     for (int c=0; c< codeword.size(); c++) {
@@ -29,13 +29,16 @@ int main() {
     if (guess == true) {
       cout << "Correct!\n";
     } else {
-      cout << "Incorrect!\nThe tractor beam pulls the person in further.\n";
+      cout << "Incorrect!\n";
       incorrect.push_back(letter);
       misses ++;
 
     }
     display_misses(misses);
-    end_game(answer, codeword);
     guess = false;
+
   }
+
+  end_game(answer, codeword);
+
 }
