@@ -18,5 +18,5 @@ and then run the executable
 
 ./a.out
 
-I have implemented an alternative version of the rock paper scissors in Python, which is available in this Collab link https://colab.research.google.com/drive/14Nw9dZEcTfmSlF3Bqbqd0Ww4-SiVgQ9C?usp=sharing
+
 
